@@ -1,9 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Prueba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Demo</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .error {
+            color: #e74c3c;
+            background: #fdecea;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mi sitio funciona correctamente Ray</h1>
+    <div class="container">
+        <h1>🎮 Game Store</h1>
+        
+        <div class="error">
+            ⚠️ Esta es una página de demostración
+        </div>
+        
+        <div class="info">
+            <h3>📌 Información importante:</h3>
+            <p>Este proyecto es una aplicación <strong>Laravel (PHP)</strong> que <strong>no puede ejecutarse</strong> en GitHub Pages porque requiere:</p>
+            <ul>
+                <li>✓ Un servidor PHP (PHP 8.2+)</li>
+                <li>✓ Una base de datos (SQLite, MySQL, etc.)</li>
+                <li>✓ Composer para las dependencias PHP</li>
+                <li>✓ Node.js y NPM para los assets</li>
+            </ul>
+            
+            <h3>🚀 ¿Cómo desplegar correctamente?</h3>
+            <p>Necesitas usar un hosting que soporte PHP. Algunas opciones gratuitas:</p>
+            <ul>
+                <li><strong>Railway</strong> (railway.app) - Tiene plan gratuito</li>
+                <li><strong>Render</strong> (render.com) - Plan gratuito disponible</li>
+                <li><strong>Laravel Cloud</strong> (cloud.laravel.com) - Nuevo servicio oficial</li>
+            </ul>
+            
+            <h3>📂 Repositorio</h3>
+            <p>Puedes ver el código fuente del proyecto en:<br>
+            <a href="#" id="repo-link">[Enlace a tu repositorio]</a></p>
+        </div>
+        
+        <button onclick="window.location.href='https://github.com'">
+            Ver código en GitHub
+        </button>
+    </div>
+    
+    <script>
+        // Esto es solo un ejemplo, reemplaza con tu URL real
+        document.getElementById('repo-link').href = window.location.origin;
+    </script>
 </body>
 </html>
